@@ -1,4 +1,5 @@
 # MonthEnd
 XAMP version
-Frontend: HTML5,CSS3,AngularJS
-Backend: INE API
+*Frontend: 1.HTML5 2.CSS3 3.AngularJS
+
+*Backend: 1.INE API
