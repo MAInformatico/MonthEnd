@@ -1,0 +1,29 @@
+<html ng-app>
+<head>
+<title>Month End</title>	
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+</head>
+<body>
+	<div align="center">
+	<label><h2>Monthly Balance</h2></label>	
+	</div>
+	<div>
+		<hr>
+	<label>Rental price:</label>
+      <input type="text" ng-model="rprice" placeholder="Please insert the rental price:">      
+      <h3>Rental price: {{rprice}} €</h3>
+		<label>Comunity bill:</label>
+      <h3>Comunity bill: {{comub}} €</h3>
+
+      <h3>Electricty bill: {{elecb}} €</h3>
+
+      <h3>Water bill: {{watb}} €</h3>
+
+      <h3>Internet bill: {{intb}} €</h3>
+
+      <h3>Gas bill: {{gasb}} €</h3>
+
+      <h2>Total: €</h2>
+	</div>
+</body>
+</html>
