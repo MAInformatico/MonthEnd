@@ -7,23 +7,38 @@
 	<div align="center">
 	<label><h2>Monthly Balance</h2></label>	
 	</div>
-	<div>
+	<div align="center">
 		<hr>
-	<label>Rental price:</label>
-      <input type="text" ng-model="rprice" placeholder="Please insert the rental price:">      
+	<label>Salary:</label>
+      <input type="text" ng-model="rprice" placeholder="Please insert your month salary:">            
+      <h3>Rental price: {{rprice}} €</h3>	
+
+	<label>Rental bill:</label>
+      <input type="text" ng-model="rprice" placeholder="Please insert the rental bill:">            
       <h3>Rental price: {{rprice}} €</h3>
-		<label>Comunity bill:</label>
+
+	<label>Comunity bill:</label>
+		<input type="text" ng-model="comub" placeholder="Please insert the comunity bill:">      
       <h3>Comunity bill: {{comub}} €</h3>
 
-      <h3>Electricty bill: {{elecb}} €</h3>
-
+	<label>Electricity bill:</label>
+		<input type="text" ng-model="elecb" placeholder="Please insert the electricity bill:">      
+      <h3>Electricity bill: {{elecb}} €</h3>
+		
+	<label>Water bill:</label>
+		<input type="text" ng-model="watb" placeholder="Please insert the water bill:">      
       <h3>Water bill: {{watb}} €</h3>
 
-      <h3>Internet bill: {{intb}} €</h3>
-
-      <h3>Gas bill: {{gasb}} €</h3>
+      <label>Internet bill:</label>
+		<input type="text" ng-model="intb" placeholder="Please insert the internet bill:">      
+	<h3>Internet bill: {{intb}} €</h3>
+		
+    <label>Gas bill:</label>
+      <input type="text" ng-model="gasb" placeholder="Please insert the gas bill:">      
+	<h3>Gas bill: {{gasb}} €</h3>
 
       <h2>Total: €</h2>
+      <input type="submit"> <input type="reset">
 	</div>
 </body>
 </html>
