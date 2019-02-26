@@ -1,43 +1,57 @@
-<html ng-app>
+<html>
 <head>
 <title>Month End</title>	
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<script>
+		var app = angular.module('calculate', []);
+		app.controller('ctrl', function($scope) {
+		    $scope.salary= 0;
+		    $scope.rentb= 0;
+		    $scope.comub= 0;
+		    $scope.elecb= 0;
+		    $scope.watb= 0;
+		    $scope.intb= 0;
+		    $scope.gasb= 0;
+		});
+	</script>
 </head>
 <body>
-	<div align="center">
+	<div id="Title" align="center">
 	<label><h2>Monthly Balance</h2></label>	
 	</div>
-	<div align="center">
+	<div id="data" ng-app="calculate" ng-controller="ctrl"  align="center">
 		<hr>
-	<label>Salary:</label>
-      <input type="number" ng-model="salary" placeholder="Please insert your month salary:">            
+	<label id="Salary">Salary:</label>
+      <input type="number" ng-model="salary">            
       <h3>Rental price: {{rprice}} €</h3>	
 
 	<label>Rental bill:</label>
-      <input type="number" ng-model="rentb" placeholder="Please insert the rental bill:">            
+      <input type="number" ng-model="rentb">            
       <h3>Rental price: {{rprice}} €</h3>
 
 	<label>Comunity bill:</label>
-		<input type="number" ng-model="comub" placeholder="Please insert the comunity bill:">      
+		<input type="number" ng-model="comub">      
       <h3>Comunity bill: {{comub}} €</h3>
 
 	<label>Electricity bill:</label>
-		<input type="number" ng-model="elecb" placeholder="Please insert the electricity bill:">      
+		<input type="number" ng-model="elecb">      
       <h3>Electricity bill: {{elecb}} €</h3>
 		
 	<label>Water bill:</label>
-		<input type="number" ng-model="watb" placeholder="Please insert the water bill:">      
+		<input type="number" ng-model="watb">      
       <h3>Water bill: {{watb}} €</h3>
 
       <label>Internet bill:</label>
-		<input type="number" ng-model="intb" placeholder="Please insert the internet bill:">      
+		<input type="number" ng-model="intb">      
 	<h3>Internet bill: {{intb}} €</h3>
 		
     <label>Gas bill:</label>
-      <input type="number" ng-model="gasb" placeholder="Please insert the gas bill:">      
+      <input type="number" ng-model="gasb">      
 	<h3>Gas bill: {{gasb}} €</h3>
 
-      <h2>Total: {{salary - (rentb + comub + elecb + watb + intb + gasb)}} €</h2>
+		<label><h2>Balance:</h2></label>
+      <h3>{{salary - rentb - comub - elecb - watb - intb - gasb}} €</h3>
       
 	</div>
 </body>
