@@ -25,33 +25,33 @@
 	      <input type="number" ng-model="salary">            
 	      <h3>Salary: {{salary}} €</h3>	
 
-		<label>Rental bill:</label>
+		<label id="Rental">Rental bill:</label>
 	      <input type="number" ng-model="rentb">            
 	      <h3>Rental bill: {{rentb}} €</h3>
 
-		<label>Comunity bill:</label>
+		<label id="Comunity">Comunity bill:</label>
 			<input type="number" ng-model="comub">      
 	      <h3>Comunity bill: {{comub}} €</h3>
 
-		<label>Electricity bill:</label>
+		<label id="Electricity">Electricity bill:</label>
 			<input type="number" ng-model="elecb">      
 	      <h3>Electricity bill: {{elecb}} €</h3>
 			
-		<label>Water bill:</label>
+		<label id="Water">Water bill:</label>
 			<input type="number" ng-model="watb">      
 	      <h3>Water bill: {{watb}} €</h3>
 
-	      <label>Internet bill:</label>
+	      <label id="Internet">Internet bill:</label>
 			<input type="number" ng-model="intb">      
 		<h3>Internet bill: {{intb}} €</h3>
 			
-	    <label>Gas bill:</label>
+	    <label id="Gas">Gas bill:</label>
 	      <input type="number" ng-model="gasb">      
 		<h3>Gas bill: {{gasb}} €</h3>
 
-		<div ng-style="balance">
+		<div id="Balance" ng-style="balance">
 			<label><h2>Balance:</h2></label>
-	      <h3>{{balance= salary - rentb - comub - elecb - watb - intb - gasb}} €</h3>      
+	      <h3>{{salary - rentb - comub - elecb - watb - intb - gasb}} €</h3>      
 	  	</div>
 
 	</div>
