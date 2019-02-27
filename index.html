@@ -4,44 +4,53 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
 <link rel="stylesheet" href="css/style.css" type="text/css" />
 <script type="text/javascript" src="js/file.js"></script>
+
 </head>
 <body>
+	  <noscript>
+        <h1>Checking Javascript</h1>
+        <div class="unavailable">
+            Javascript is not available in your browser.<br />
+            Please,<br />
+            <b><i>active Javascript</i></b>.<br />            
+        </div>
+    </noscript>
+
 	<div id="Title" align="center">
-	<label><h2>Monthly Balance</h2></label>	
+		<label><h2>Monthly Balance</h2></label>	
 	</div>
 	<div id="data" ng-app="calculate" ng-controller="ctrl"  align="center">
-		<hr>
-	<label id="Salary">Salary:</label>
-      <input type="number" ng-model="salary">            
-      <h3>Salary: {{salary}} €</h3>	
+			<hr>
+		<label id="Salary">Salary:</label>
+	      <input type="number" ng-model="salary">            
+	      <h3>Salary: {{salary}} €</h3>	
 
-	<label>Rental bill:</label>
-      <input type="number" ng-model="rentb">            
-      <h3>Rental bill: {{rentb}} €</h3>
+		<label>Rental bill:</label>
+	      <input type="number" ng-model="rentb">            
+	      <h3>Rental bill: {{rentb}} €</h3>
 
-	<label>Comunity bill:</label>
-		<input type="number" ng-model="comub">      
-      <h3>Comunity bill: {{comub}} €</h3>
+		<label>Comunity bill:</label>
+			<input type="number" ng-model="comub">      
+	      <h3>Comunity bill: {{comub}} €</h3>
 
-	<label>Electricity bill:</label>
-		<input type="number" ng-model="elecb">      
-      <h3>Electricity bill: {{elecb}} €</h3>
-		
-	<label>Water bill:</label>
-		<input type="number" ng-model="watb">      
-      <h3>Water bill: {{watb}} €</h3>
+		<label>Electricity bill:</label>
+			<input type="number" ng-model="elecb">      
+	      <h3>Electricity bill: {{elecb}} €</h3>
+			
+		<label>Water bill:</label>
+			<input type="number" ng-model="watb">      
+	      <h3>Water bill: {{watb}} €</h3>
 
-      <label>Internet bill:</label>
-		<input type="number" ng-model="intb">      
-	<h3>Internet bill: {{intb}} €</h3>
-		
-    <label>Gas bill:</label>
-      <input type="number" ng-model="gasb">      
-	<h3>Gas bill: {{gasb}} €</h3>
+	      <label>Internet bill:</label>
+			<input type="number" ng-model="intb">      
+		<h3>Internet bill: {{intb}} €</h3>
+			
+	    <label>Gas bill:</label>
+	      <input type="number" ng-model="gasb">      
+		<h3>Gas bill: {{gasb}} €</h3>
 
-		<label><h2>Balance:</h2></label>
-      <h3>{{salary - rentb - comub - elecb - watb - intb - gasb}} €</h3>
-      
+			<label><h2>Balance:</h2></label>
+	      <h3>{{salary - rentb - comub - elecb - watb - intb - gasb}} €</h3>      
 	</div>
 </body>
 </html>
