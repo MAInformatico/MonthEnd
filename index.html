@@ -3,18 +3,7 @@
 <title>Month End</title>	
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
 <link rel="stylesheet" href="css/style.css" type="text/css" />
-	<script>
-		var app = angular.module('calculate', []);
-		app.controller('ctrl', function($scope) {
-		    $scope.salary= 0;
-		    $scope.rentb= 0;
-		    $scope.comub= 0;
-		    $scope.elecb= 0;
-		    $scope.watb= 0;
-		    $scope.intb= 0;
-		    $scope.gasb= 0;
-		});
-	</script>
+<script type="text/javascript" src="js/file.js"></script>
 </head>
 <body>
 	<div id="Title" align="center">
@@ -24,11 +13,11 @@
 		<hr>
 	<label id="Salary">Salary:</label>
       <input type="number" ng-model="salary">            
-      <h3>Rental price: {{rprice}} €</h3>	
+      <h3>Salary: {{salary}} €</h3>	
 
 	<label>Rental bill:</label>
       <input type="number" ng-model="rentb">            
-      <h3>Rental price: {{rprice}} €</h3>
+      <h3>Rental bill: {{rentb}} €</h3>
 
 	<label>Comunity bill:</label>
 		<input type="number" ng-model="comub">      
