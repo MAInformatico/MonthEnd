@@ -49,8 +49,11 @@
 	      <input type="number" ng-model="gasb">      
 		<h3>Gas bill: {{gasb}} €</h3>
 
+		<div ng-style="balance">
 			<label><h2>Balance:</h2></label>
-	      <h3>{{salary - rentb - comub - elecb - watb - intb - gasb}} €</h3>      
+	      <h3>{{balance= salary - rentb - comub - elecb - watb - intb - gasb}} €</h3>      
+	  	</div>
+
 	</div>
 </body>
 </html>

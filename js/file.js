@@ -10,4 +10,3 @@
 		    $scope.intb= 0;
 		    $scope.gasb= 0;
 		});
-	
