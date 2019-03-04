@@ -22,6 +22,8 @@
 	</div>
 	<div id="data" ng-app="calculate" ng-controller="ctrl"  align="center">
 			<hr>
+			<label><h2>Monthly fixed costs</h2></label>
+
 		<label id="Salary">Salary:</label>
 	      <input type="number" ng-model="salary">            
 	      <h3>Salary: {{salary}} €</h3>	
@@ -51,7 +53,7 @@
 		<h3>Gas bill: {{gasb}} €</h3>
 
 		<div id="Balance" ng-style="balance">
-			<label><h2>Balance:</h2></label>
+			<label><h2>Balance for food, transport etc:</h2></label>
 	      <h3>{{salary - rentb - comub - elecb - watb - intb - gasb}} €</h3>      
 	  	</div>
 
