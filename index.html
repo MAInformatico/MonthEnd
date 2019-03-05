@@ -19,7 +19,7 @@
         </div>
     </noscript>
     <header>
-    <div id="Title" align="center">
+    <div id="Title">
 		<label><h2>MonthEnd</h2></label>	
 	</div>
     </header>
@@ -38,7 +38,7 @@
 			<tr><td><label id="Gas">Gas bill:</label></td><td><input type="number" ng-model="gasb"></td></tr>			
 		</table>
 		<hr>
-			<a href="javascript:printPDF()" class="button">Export to PDF</a>
+			<button type="button"><a href="javascript:printPDF()">Export to PDF</a></button>
 			<div id="print">
 				<div id="Balance" ng-style="balance">
 					<h3>City: {{city}}</h3>	
