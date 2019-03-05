@@ -18,11 +18,13 @@
             <b><i>active Javascript</i></b>.<br />            
         </div>
     </noscript>
-
-	<div id="Title" align="center">
+    <header>
+    <div id="Title">
 		<label><h2>MonthEnd</h2></label>	
 	</div>
-	<div id="data" ng-app="calculate" ng-controller="ctrl"  align="center">
+    </header>
+	
+	<div id="data" ng-app="calculate" ng-controller="ctrl">
 		<hr>
 		<label><h3>Monthly fixed costs</h3></label>
 		<table>
@@ -49,9 +51,13 @@
 					<h3>Gas bill: {{gasb}} euros</h3>
 
 					<label><h2>Balance (for food, transport etc) if you decide to live in {{city}}:</h2></label>
-			      <h3>{{salary - rentb - comub - elecb - watb - intb - gasb}} €</h3>      
+			      <h3>{{salary - rentb - comub - elecb - watb - intb - gasb}} euros</h3>      
 		  		</div>				
 		</div>
 	</div>
+	<footer>
+		<p>Developed by: <a href="https://github.com/MAInformatico/">MAInformatico</a></p>
+		<p>Under: <a href="https://github.com/MAInformatico/MonthEnd/blob/master/LICENSE">Apache License</a></p>
+	</footer>
 </body>
 </html>
