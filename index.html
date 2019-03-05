@@ -2,6 +2,7 @@
 <head>
 <title>Month End</title>	
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.22/pdfmake.min.js"></script>
 <link rel="stylesheet" href="css/style.css" type="text/css" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script type="text/javascript" src="js/file.js"></script>
@@ -18,47 +19,34 @@
     </noscript>
 
 	<div id="Title" align="center">
-		<label><h2>Monthly Balance</h2></label>	
+		<label><h2>MonthEnd</h2></label>	
 	</div>
 	<div id="data" ng-app="calculate" ng-controller="ctrl"  align="center">
 		<hr>
-		<label><h2>Monthly fixed costs</h2></label>
-
-		<label id="City">City:</label>
-	      <input type="text" ng-model="city">            
-	      <h3>City: {{city}}</h3>	
-
-			<label id="Salary">Salary:</label>
-		      <input type="number" ng-model="salary">            
-		      <h3>Salary: {{salary}} €</h3>	
-
-			<label id="Rental">Rental bill:</label>
-		      <input type="number" ng-model="rentb">            
-		      <h3>Rental bill: {{rentb}} €</h3>
-
-			<label id="Comunity">Comunity bill:</label>
-				<input type="number" ng-model="comub">      
-		      <h3>Comunity bill: {{comub}} €</h3>
-
-			<label id="Electricity">Electricity bill:</label>
-				<input type="number" ng-model="elecb">      
-		      <h3>Electricity bill: {{elecb}} €</h3>
-				
-			<label id="Water">Water bill:</label>
-				<input type="number" ng-model="watb">      
-		      <h3>Water bill: {{watb}} €</h3>
-
-		      <label id="Internet">Internet bill:</label>
-				<input type="number" ng-model="intb">      
-			<h3>Internet bill: {{intb}} €</h3>
-				
-		    <label id="Gas">Gas bill:</label>
-		      <input type="number" ng-model="gasb">      
-			<h3>Gas bill: {{gasb}} €</h3>
-
+		<label><h3>Monthly fixed costs</h3></label>
+		<table>
+			<tr><td><label id="City">City:</label></td><td><input type="text" ng-model="city"></td></tr>           	      
+			<tr><td><label id="Salary">Salary:</label></td><td><input type="number" ng-model="salary"></td></tr>
+			<tr><td><label id="Rental">Rental bill:</label></td><td><input type="number" ng-model="rentb"></td></tr>
+			<tr><td><label id="Comunity">Comunity bill:</label></td><td><input type="number" ng-model="comub"></td></tr>
+			<tr><td><label id="Electricity">Electricity bill:</label></td><td><input type="number" ng-model="elecb"></td></tr>			
+			<tr><td><label id="Water">Water bill:</label></td><td><input type="number" ng-model="watb"></td></tr>		      
+			<tr><td><label id="Internet">Internet bill:</label></td><td><input type="number" ng-model="intb"></td></tr>
+			<tr><td><label id="Gas">Gas bill:</label></td><td><input type="number" ng-model="gasb"></td></tr>			
+		</table>
+		<hr>
 			<div id="Balance" ng-style="balance">
-				<label><h2>Balance (for food, transport etc):</h2></label>
-		      <h3>{{salary - rentb - comub - elecb - watb - intb - gasb}} € if you decide to live in {{city}}</h3>      
+				<h3>City: {{city}}</h3>	
+				<h3>Salary: {{salary}} €</h3>	
+				<h3>Rental bill: {{rentb}} €</h3>
+				<h3>Comunity bill: {{comub}} €</h3>
+				<h3>Electricity bill: {{elecb}} €</h3>
+				<h3>Water bill: {{watb}} €</h3>
+				<h3>Internet bill: {{intb}} €</h3>
+				<h3>Gas bill: {{gasb}} €</h3>
+
+				<label><h2>Balance (for food, transport etc) if you decide to live in {{city}}:</h2></label>
+		      <h3>{{salary - rentb - comub - elecb - watb - intb - gasb}} €</h3>      
 	  	</div>
 
 	</div>
