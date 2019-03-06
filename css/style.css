@@ -1,23 +1,37 @@
 /*CSS file for MonthEnd*/ 
 
 header{
-	margin:auto;
-	display: block;
+	display: flex;
+	justify-content: center;
 }
 
 body{
-	background-color: lightblue;
+	background-color: lightsalmon;
 	text-align: center;
 }
 
-#Title{
-	color: green;
-	margin: auto;
+#title{
+	display: flex;	
+	justify-content: center;
+	color: blue;
 }
 
 #Salary{
-	color: green;
+	font-style: oblique;
 }
+
+#print{
+	display: flex;
+	justify-content: center;
+	background-color: antiquewhite;
+	height:52%;
+	width:38%;
+}
+
+#button{
+	margin-bottom: 10px;
+}
+
 
 h3 {
   color: black;  
@@ -31,6 +45,8 @@ h3 {
 }
 
 footer{
-	margin:auto;
-	display: block;
+	display: flex;	
+	justify-content: space-around;
+	font-size: large;
+	align-items: flex-end;
 }

@@ -23,7 +23,7 @@ function printPDF() {
             }
         };
         margins = {
-            top: 80, bottom: 60, left: 40, width: 522
+            top: 80, bottom: 60, left: 80, width: 522
         };
 
         pdf.fromHTML( source, margins.left, margins.top, {
