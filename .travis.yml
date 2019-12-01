@@ -4,3 +4,5 @@ node_js:
 
 notifications:
         email: true
+
+script: ./index.html
